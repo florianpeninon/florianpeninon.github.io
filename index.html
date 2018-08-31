@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html id="html" class="theme">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Florian Peninon — Independent Product Designer</title>
+    <meta name="author" content="Florian Peninon">
+    <meta name="description" content="Florian Peninon is an independent interactive product designer">
+    <meta name="keywords" content="florian peninon, product design, portfolio, interactive, independent, freelance, design, ui, interface, mobile, webdesign, app, typography">
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700" type="text/css">
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <script>
+      // Initial theme
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var hour = (new Date).getHours()
+        var html = document.getElementById('html')
+        var theme = hour >= 21 ? 'theme-dark' : 'theme-light'
+        html.classList.add(theme)
+      });
+    </script>
+  </head>
+  <body id="body">
+    <header class="header w-520">
+      <h1 class="header--title">
+        Hi – I’m Florian,<br>an independant designer.<br>I design and make stuff on the internet.
+      </h1>
+      <p class="header--body">
+        In the last eight years I helped other companies, such as Microsoft, Onefootball and WeAreTM to design experience and interface for digital products.
+      </p>
+      <p class="header--body">
+        <a href="#">Say Hi</a> or
+        <a href="">Follow me on Twitter</a>
+      </p>
+    </header>
+    <section class="section w-1400">
+      <div class="w-520">
+        <h1 class="section--title">Work</h1>
+        <p class="section--body">Due to NDA, a more exhaustive portfolio is available on request.</p>
+        <span class="section--caption">Some projects have been revamped for this portfolio</span>
+      </div>
+      <div class="project">
+        <h2 class="project--title">Microsoft To-Do</h2>
+        <p class="project--job">2016-2017 Product Designer</p>
+        <div class="project--image"><img src="img/ms-todo-01.png"/></div>
+        <div class="project--image"><img src="img/ms-todo-02.png"/></div>
+        <div class="project--image"><img src="img/ms-todo-03.png"/></div>
+      </div>
+      <div class="project">
+        <h2 class="project--title">Tackl by Onefootball</h2>
+        <p class="project--job">2016 Lead Product Designer</p>
+        <div class="project--image"><img src="img/tackl-01.png"/></div>
+        <div class="project--image"><img src="img/tackl-02.png"/></div>
+        <div class="project--image"><img src="img/tackl-03.png"/></div>
+      </div>
+      <div class="project">
+        <h2 class="project--title">Onefootball</h2>
+        <p class="project--job">2014-2016 Product Designer</p>
+        <div class="project--image"><img src="img/1f-01.png"/></div>
+        <div class="project--image"><img src="img/1f-02.png"/></div>
+      </div>
+    </section>
+    <footer class="footer">© 2018 — Florian Peninon</footer>
+    <script>
+      // Theme Button
+      var themeToggle = document.createElement('div');
+      themeToggle.classList.add('theme-toggle')
+      themeToggle.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="theme-icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8ZM6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18C8.68629 18 6 15.3137 6 12Z"/><path d="M1 12C1 11.4477 1.44772 11 2 11H3C3.55228 11 4 11.4477 4 12C4 12.5523 3.55228 13 3 13H2C1.44772 13 1 12.5523 1 12Z"/><path d="M20 12C20 11.4477 20.4477 11 21 11H22C22.5523 11 23 11.4477 23 12C23 12.5523 22.5523 13 22 13H21C20.4477 13 20 12.5523 20 12Z"/><path d="M12 23C11.4477 23 11 22.5523 11 22V21C11 20.4477 11.4477 20 12 20C12.5523 20 13 20.4477 13 21V22C13 22.5523 12.5523 23 12 23Z"/><path d="M12 4C11.4477 4 11 3.55228 11 3V2C11 1.44772 11.4477 1 12 1C12.5523 1 13 1.44772 13 2V3C13 3.55228 12.5523 4 12 4Z"/><path d="M4.22224 19.7782C3.83172 19.3877 3.83172 18.7545 4.22224 18.364L4.92935 17.6569C5.31987 17.2663 5.95304 17.2663 6.34356 17.6569C6.73409 18.0474 6.73409 18.6806 6.34356 19.0711L5.63646 19.7782C5.24593 20.1687 4.61277 20.1687 4.22224 19.7782Z"/><path d="M17.6573 6.34315C17.2668 5.95263 17.2668 5.31946 17.6573 4.92894L18.3644 4.22183C18.7549 3.83131 19.3881 3.83131 19.7786 4.22183C20.1691 4.61236 20.1691 5.24552 19.7786 5.63605L19.0715 6.34315C18.681 6.73368 18.0478 6.73368 17.6573 6.34315Z"/><path d="M19.7784 19.7782C19.3879 20.1687 18.7547 20.1687 18.3642 19.7782L17.6571 19.0711C17.2666 18.6806 17.2666 18.0474 17.6571 17.6569C18.0476 17.2663 18.6808 17.2663 19.0713 17.6569L19.7784 18.364C20.1689 18.7545 20.1689 19.3877 19.7784 19.7782Z"/><path d="M6.34334 6.34316C5.95281 6.73368 5.31965 6.73368 4.92912 6.34316L4.22202 5.63605C3.83149 5.24552 3.83149 4.61236 4.22202 4.22184C4.61254 3.83131 5.24571 3.83131 5.63623 4.22184L6.34334 4.92894C6.73386 5.31947 6.73386 5.95263 6.34334 6.34316Z"/></g></svg>'
+      themeToggle.addEventListener('click', function(){
+        var html = document.getElementById('html');
+        html.classList.toggle('theme-light')
+        html.classList.toggle('theme-dark')
+      })
+
+      document.getElementById('body').append(themeToggle)
+    </script>
+  </body>
+</html>

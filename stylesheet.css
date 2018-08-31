@@ -1,0 +1,208 @@
+/* General */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  color: #FFFFFF;
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-align: center;
+}
+
+body {
+  padding: 0 40px;
+}
+
+a {
+  color: inherit;
+}
+
+/* Helpers */
+.w-520 {
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w-1400 {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Themes */
+.theme html,
+.theme body,
+.theme .project--image {
+  transition: background-color 0.3s;
+}
+
+.theme .header--title,
+.theme .section--title,
+.theme .project--title,
+.theme .header--body,
+.theme .section--body,
+.theme .section--caption,
+.theme .project--job,
+.theme .footer {
+  transition: color 0.3s;
+}
+
+.theme-light html,
+.theme-light body {
+  background-color: #FFFFFF;
+}
+
+.theme-light .header--title,
+.theme-light .section--title,
+.theme-light .project--title {
+  color: #202832;
+}
+
+.theme-light .header--body,
+.theme-light .section--body,
+.theme-light .section--caption,
+.theme-light .project--job,
+.theme-light .footer {
+  color: #6D7580;
+}
+
+.theme-light .project--image {
+  background-color: #F7F8FA;
+}
+
+.theme-light #theme-icon {
+  fill: #6D7580;
+}
+
+.theme-light .theme-toggle:hover #theme-icon {
+  fill: #202832;
+}
+
+.theme-dark html,
+.theme-dark body {
+  background-color: #202832;
+}
+
+.theme-dark .header--title,
+.theme-dark .section--title,
+.theme-dark .project--title {
+  color: #FFFFFF;
+}
+
+.theme-dark .header--body,
+.theme-dark .section--body,
+.theme-dark .section--caption,
+.theme-dark .project--job,
+.theme-dark .footer {
+  color: #8D97A6;
+}
+
+.theme-dark .project--image {
+  background-color: #262F3B;
+}
+
+.theme-dark #theme-icon {
+  fill: #8D97A6;
+}
+
+.theme-dark .theme-toggle:hover #theme-icon {
+  fill: #FFFFFF;
+}
+
+/* Components */
+.header {
+  margin: 0 auto;
+  padding: 120px 0;
+}
+
+.header--title {
+  font-weight: 700;
+  line-height: 51px;
+  font-size: 36px;
+  letter-spacing: 0.02em;
+  margin-bottom: 120px;
+}
+
+.header--body {
+  font-weight: normal;
+  line-height: 41px;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  margin-bottom: 41px;
+}
+
+.section--title {
+  font-weight: 700;
+  line-height: 51px;
+  font-size: 36px;
+  letter-spacing: 0.02em;
+  margin-bottom: 40px;
+}
+
+.section--body {
+  font-weight: normal;
+  line-height: 41px;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.section--caption {
+  font-weight: normal;
+  line-height: normal;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  display: block;
+  margin-bottom: 120px;
+}
+
+.project--title {
+  font-weight: 600;
+  line-height: 32px;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  margin: 0 auto;
+}
+
+.project--job {
+  font-weight: normal;
+  line-height: 32px;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  margin: 0 auto 32px;
+}
+
+.project--image {
+  max-width: 1400px;
+  margin: 0 auto 80px;
+  border-radius: 4px;
+}
+
+.project--image img {
+  max-width: 100%;
+  display: block;
+}
+
+.footer {
+  font-weight: normal;
+  line-height: normal;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  opacity: 0.5;
+  margin:80px auto;
+}
+
+.theme-toggle {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#theme-icon {
+  transition: fill 0.2s;
+}
