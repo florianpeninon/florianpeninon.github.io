@@ -32,7 +32,8 @@
       document.addEventListener("DOMContentLoaded", function(event) {
         var hour = (new Date).getHours()
         var html = document.getElementById('html')
-        var theme = hour >= 21 ? 'theme-dark' : 'theme-light'
+        var condition = hour >= 21 || hour <= 6
+        var theme = condition ? 'theme-dark' : 'theme-light'
         html.classList.add(theme)
       });
     </script>
