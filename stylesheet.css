@@ -58,8 +58,13 @@ a {
   transition: color 0.25s;
 }
 
+.theme .button--transparent {
+  transition: color 0.25s, background-color 0.25s;
+}
+
 .theme-light html,
-.theme-light body {
+.theme-light body,
+.theme-light .button--transparent {
   background-color: #FFFFFF;
 }
 
@@ -73,7 +78,8 @@ a {
 .theme-light .section--body,
 .theme-light .section--caption,
 .theme-light .project--job,
-.theme-light .footer {
+.theme-light .footer,
+.theme-light .button--transparent {
   color: #6D7580;
 }
 
@@ -90,7 +96,8 @@ a {
 }
 
 .theme-dark html,
-.theme-dark body {
+.theme-dark body,
+.theme-dark .button--transparent {
   background-color: #202832;
 }
 
@@ -104,7 +111,8 @@ a {
 .theme-dark .section--body,
 .theme-dark .section--caption,
 .theme-dark .project--job,
-.theme-dark .footer {
+.theme-dark .footer,
+.theme-dark .button--transparent {
   color: #8D97A6;
 }
 
@@ -139,7 +147,6 @@ a {
 
 .header--body a {
   text-decoration: underline;
-  transition: color 0.25s;
 }
 
 .header--body a:hover {
@@ -207,4 +214,34 @@ a {
 
 #theme-icon {
   transition: fill 0.25s;
+}
+
+.button {
+  display: block;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  line-height: 48px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.button--blue {
+  color: #FFFFFF;
+  background-color: #597FB2;
+}
+
+.button--blue:hover {
+  background-color: #4D6D99;
+}
+
+.button--transparent span {
+  text-decoration: underline;
+}
+
+.button--transparent:hover span {
+  color: #597FB2;
 }
